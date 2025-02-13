@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HSY Portfolio</title>
+    <!-- 폰트 관련 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Handjet:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- 랜딩 페이지 -->
+    <section id="landing">
+      <h1>HAM SEOYEON</h1>
+      <h2>WEB FRONTEND</h2>
+      <h3>DEVELOPER</h3>
+      <div id="powerButton">
+        <img src="img/poweroff.png" alt="power button" />
+      </div>
+    </section>
+
+    <!-- 메인 콘텐츠 -->
+    <!-- 로딩 화면 (.inScreen은 화면 크기 잡아주며 overflow hidden? 암튼 넘어서 창 나가면 안 됨) -->
+    <div class="screenBG">
+      <div class="inScreen">
+        <div id="loadingScreen">
+          <p>Now Loading...</p>
+          <div class="progressBar">
+            <div class="progressFill"></div>
+          </div>
+        </div>
+        <!-- 오프닝 화면 -->
+        <div id="openingScreen">
+          <img src="img/opening.png" alt="opening" />
+        </div>
+        <!-- 바탕 화면 -->
+        <div id="home">
+          <div id="greenWallpaper">
+            <div class="homeIcons">
+              <img src="img/user_card.png" alt="icon1" />
+              <p>Profile</p>
+            </div>
+            <div class="homeIcons">
+              <img src="img/directory_open_file_mydocs-4.png" alt="icon2" />
+              <p>Projects</p>
+            </div>
+            <div class="homeIcons">
+              <img src="img/minesweeper-0.png" alt="icon3" />
+              <p>Minesweeper</p>
+            </div>
+            <div class="homeIcons">
+              <img src="img/msn3-3.png" alt="icon4" />
+              <p>Contact</p>
+            </div>
+          </div>
+          <!-- 작업 표시줄 -->
+          <div id="taskbar">
+            <div class="startBtn">
+              <img src="img/startWindow.png" alt="startbtn" />
+              <p>Start</p>
+            </div>
+            <div class="clock">오전 00:00</div>
+          </div>
+        </div>
+        <!-- 창(모달) -->
+        <!-- 프로필 창 -->
+        <div id="profileWindow" class="window">
+          <div class="window-header">
+            <span class="window-title">Profile</span>
+            <div class="window-controls">
+              <button class="minimize"></button>
+              <button class="maximize"></button>
+              <button class="close"></button>
+            </div>
+          </div>
+          <div id="profile" class="windowContent">
+            <div class="introduceQ">
+              <h4>Why Frontend? <span class="dropdown">▼</span></h4>
+              <p class="introContent">
+                웹은 처음부터 저에게 신기한 공간이었어요. 버튼 하나를 누르면
+                화면이 반응하고, 스크롤을 내릴 때 자연스레 등장하는
+                애니메이션들까지, 작은 디테일들 속에 이야기가 숨어 있는
+                느낌이었죠.<br />그러다 스타트업에서 사용자들의 불편 사항을
+                들으며, 단순히 문제를 분석하고 정리하는 데서 끝나는 것이 아니라
+                직접 해결할 방법을 찾아내고 싶다는 열망이 생겼습니다. 그
+                과정에서 프론트엔드 개발이야말로, 사람들과 기술을 연결하며
+                문제를 직접 해결하는 가장 직관적인 도구라는 확신을 가지게
+                되었어요.<br />
+                프론트엔드 개발은 단순히 화면을 만드는 일이 아니라, 사용자와의
+                첫 만남을 설계하는 일이라고 생각해요. 화면 위에 누군가의
+                아이디어와 비전이 구현되고, 그것이 사용자에게 "편하다",
+                "재미있다"라는 반응으로 돌아오는 순간들이 정말 매력적으로
+                다가왔습니다. 그 매력에 끌려 자연스럽게 이 길을 걷게 되었고,
+                이제는 기술과 사람을 연결하는 프론트엔드 개발자로 성장하고
+                싶습니다.
+              </p>
+            </div>
+            <div class="introduceQ">
+              <h4>What will I do? <span class="dropdown">▼</span></h4>
+              <p class="introContent">
+                앞으로 저는 사용자가 쉽게 이해하고 편리하게 사용할 수 있는
+                인터페이스를 만드는 일을 하고 싶습니다. 기획자와 디자이너의
+                아이디어를 화면 위에 세심히 구현하고, 백엔드에서 온 데이터를
+                매끄럽게 연결해 사용자에게 하나의 완성된 경험을 전달하는
+                개발자가 되는 것이 목표예요.<br />이를 위해 단순히 화면을
+                구현하는 데서 그치지 않고, HTML, CSS, JavaScript를 활용해
+                웹사이트의 구조와 동작을 효율적으로 설계하고, React와 같은
+                기술을 통해 확장 가능하고 재사용할 수 있는 컴포넌트를 설계하고자
+                합니다.<br />또한, 사용자가 상호작용할 때 더 부드럽고 직관적인
+                경험을 제공할 수 있도록 작은 인터랙션과 애니메이션에도 디테일을
+                담는 개발자가 되고 싶습니다. 특히, 사용자들이 느낄 수 있는 작은
+                디테일까지 놓치지 않으면서 서비스 흐름을 매끄럽게 조율하는 가교
+                역할을 맡고 싶습니다. 사용자가 "편하다"라고 느낄 때, 그 뒤에서
+                팀의 아이디어와 노력이 어떻게 조화를 이루었는지를 상상하는
+                것만으로도 설레니까요.<br />이런 과정을 통해 사용자뿐만 아니라
+                기술적으로도 신뢰받는 개발자로 자리 잡고 싶습니다.
+              </p>
+            </div>
+            <div class="introduceQ">
+              <h4>How will I achieve? <span class="dropdown">▼</span></h4>
+              <p class="introContent">
+                앞으로 저는 프론트엔드 개발자로서, 기술적 완성도와 협업 능력을
+                균형 있게 발전시켜 나가고 싶습니다. 기술적으로는 더 효율적이고
+                가독성 높은 코드를 작성하며, 팀원들이 쉽게 이해하고 확장할 수
+                있는 구조를 설계하는 데 집중할 계획입니다. 이를 위해, 작성한
+                코드를 리팩토링하며 개선점을 찾아내고, 더 나은 설계를 위한
+                기준을 꾸준히 학습하고 적용하려 노력하고 있습니다.<br />또한,
+                프론트엔드 개발은 혼자가 아닌 팀과의 협력이 필수적인 작업이라고
+                생각합니다. 저는 다양한 의견을 수렴하고, 프로젝트의 목표를
+                명확히 공유하며, 팀원들과 함께 최적의 솔루션을 찾아가는 과정을
+                중요하게 여깁니다. 유니세프 프로젝트에서도 기획자와 디자이너의
+                의도를 파악하며 작은 디테일까지 세심히 구현했던 경험은, 협업
+                속에서 어떻게 가치를 더할 수 있는지를 깨닫게 해주었습니다.<br />앞으로도
+                기술과 사람을 연결하며, 팀과 사용자 모두가 신뢰할 수 있는
+                개발자가 되고자 합니다. 작은 코드 한 줄부터 프로젝트의 큰
+                흐름까지, 모든 작업이 더 나은 결과를 만드는 데 기여할 수 있도록
+                끊임없이 배우고, 만들어가겠습니다!
+              </p>
+            </div>
+            <div class="tmi">
+              <h4>TMI Section <span class="dropdown">▼</span></h4>
+              <p class="tmiContent">
+                -제일 자신 있는 기능: 캐러셀, 탭 메뉴<br />
+                -연구 중인 기능: 각종 스크롤 이벤트<br />
+                -가장 즐거운 순간: 문제 해결의 순간<br />
+                -최근 인상 깊었던 일: 드래그 횡 스크롤 구현 중 velocity를<br />
+                구할 때 ‘시간’은 어차피<br />
+                requestAnimationFrame()<br />
+                사용으로 인해 한 프레임<br />
+                단위로 고정되므로<br />
+                거리만 구하면 된다는 걸<br />
+                깨달았을 때 (+ 처음으로<br />
+                재귀함수 만든 짜릿함)<br />
+                -최근 호기심이 생긴 것:<br />
+                GSAP, 다양한 라이브러리<br />
+                -최근 당황한 것:<br />
+                JS로 쓴 코드를 React로 옮기는 게<br />
+                생각보다<br />
+                간단치 않았던 것<br />
+              </p>
+              <img src="img/seoyeon.png" alt="HSY" />
+            </div>
+          </div>
+        </div>
+        <!-- 프로젝트 창 -->
+        <div id="projectsWindow" class="window">
+          <div class="window-header">
+            <span class="window-title">Projects</span>
+            <div class="window-controls">
+              <button class="minimize"></button>
+              <button class="maximize"></button>
+              <button class="close"></button>
+            </div>
+          </div>
+          <div id="projects" class="windowContent">
+            <div class="darker">
+              <h4>Unicef</h4>
+              <img src="img/arrowR.png" alt="arrow" />
+              <div class="project"></div>
+            </div>
+            <div class="darker">
+              <h4>Be Kitsch</h4>
+              <img src="img/arrowR.png" alt="arrow" />
+              <div class="project"></div>
+            </div>
+            <div class="darker">
+              <h4>Gooddog Academy</h4>
+              <img src="img/arrowR.png" alt="arrow" />
+              <div class="project"></div>
+            </div>
+            <div class="darker">
+              <h4>Khione</h4>
+              <img src="img/arrowR.png" alt="arrow" />
+              <div class="project"></div>
+            </div>
+          </div>
+          <div id="unicefDetail" class="projectDetail windowContent">
+            <div class="goBack"><img src="img/arrow.png" alt="goBack" /></div>
+            <div class="noteBG">
+              <div class="projectMovie"></div>
+              <div class="projectTitle"></div>
+              <div class="projectDuration"><span></span></div>
+              <div class="usedLanguage"><span></span></div>
+              <div class="selfOrTeam"></div>
+              <div class="projectRetrospect"></div>
+              <a class="goToSite" href="https://makee-ham.github.io/unicefRe/"
+                >사이트 바로가기</a
+              >
+            </div>
+          </div>
+          <div id="bekitschDetail" class="projectDetail windowContent">
+            <div class="goBack"><img src="img/arrow.png" alt="goBack" /></div>
+            <div class="noteBG">
+              <div class="projectMovie"></div>
+              <div class="projectTitle"></div>
+              <div class="projectDuration"><span></span></div>
+              <div class="usedLanguage"><span></span></div>
+              <div class="selfOrTeam"></div>
+              <div class="projectRetrospect"></div>
+              <a class="goToSite" href="https://makee-ham.github.io/beKitsch/"
+                >사이트 바로가기</a
+              >
+            </div>
+          </div>
+          <div id="gooddogDetail" class="projectDetail windowContent">
+            <div class="goBack"><img src="img/arrow.png" alt="goBack" /></div>
+            <div class="noteBG">
+              <div class="projectMovie"></div>
+              <div class="projectTitle"></div>
+              <div class="projectDuration"><span></span></div>
+              <div class="usedLanguage"><span></span></div>
+              <div class="selfOrTeam"></div>
+              <div class="projectRetrospect"></div>
+              <a class="goToSite" href="#">사이트 바로가기</a>
+            </div>
+          </div>
+          <div id="khioneDetail" class="projectDetail windowContent">
+            <div class="goBack"><img src="img/arrow.png" alt="goBack" /></div>
+            <div class="noteBG">
+              <div class="projectMovie"></div>
+              <div class="projectTitle"></div>
+              <div class="projectDuration"><span></span></div>
+              <div class="usedLanguage"><span></span></div>
+              <div class="selfOrTeam"></div>
+              <div class="projectRetrospect"></div>
+              <a class="goToSite" href="https://makee-ham.github.io/khione/"
+                >사이트 바로가기</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- 지뢰찾기 창 -->
+        <div id="minesweeperWindow" class="window">
+          <div class="window-header">
+            <span class="window-title">Minesweeper</span>
+            <div class="window-controls">
+              <button class="minimize"></button>
+              <button class="maximize off"></button>
+              <button class="close"></button>
+            </div>
+          </div>
+          <div id="minesweeper" class="windowContent">
+            <div id="wrapper">
+              <div class="dashboard">
+                <div class="bombCount">010</div>
+                <div class="newGame">
+                  <img src="img/smile.png" alt="smile" />
+                </div>
+                <div class="timeCount">000</div>
+              </div>
+              <div class="gameTableContainer">
+                <ul class="gameTable">
+                  <li class="row">
+                    <ul>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                    </ul>
+                  </li>
+                  <li class="row">
+                    <ul>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                    </ul>
+                  </li>
+                  <li class="row">
+                    <ul>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                    </ul>
+                  </li>
+                  <li class="row">
+                    <ul>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                    </ul>
+                  </li>
+                  <li class="row">
+                    <ul>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                    </ul>
+                  </li>
+                  <li class="row">
+                    <ul>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                    </ul>
+                  </li>
+                  <li class="row">
+                    <ul>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                    </ul>
+                  </li>
+                  <li class="row">
+                    <ul>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                    </ul>
+                  </li>
+                  <li class="row">
+                    <ul>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                      <li class="col"></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 연락처 창 -->
+        <div id="contactWindow" class="window">
+          <div class="window-header">
+            <span class="window-title">Minesweeper</span>
+            <div class="window-controls">
+              <button class="minimize"></button>
+              <button class="maximize off"></button>
+              <button class="close"></button>
+            </div>
+          </div>
+          <div id="contact" class="windowContent">
+            <div class="contactMethods">
+              <img src="img/mail.svg" alt="contact1" />
+            </div>
+            <div class="contactMethods">
+              <img src="img/github.svg" alt="contact2" />
+            </div>
+            <div class="contactMethods">
+              <img src="img/Medium-Icon-Black-small.svg" alt="contact3" />
+            </div>
+            <div class="contactMethods">
+              <img src="img/kakao-talk.svg" alt="contact4" />
+            </div>
+          </div>
+        </div>
+        <!-- 시작 메뉴 -->
+      </div>
+    </div>
+  </body>
+</html>
